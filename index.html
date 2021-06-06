@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Event Catcher</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="modal">
+            <div class="keyboard_event_modal hidden">
+                <div class="console"></div>
+                <div class="inputarea">
+                    <input
+                        type="text"
+                        name="name"
+                        id="inp"
+                        autocomplete="off"
+                    />
+                </div>
+            </div>
+            <div class="mouse_event_modal hidden">
+                <div class="display"></div>
+                <div class="toucharea" id="touchArea">
+                    <span>Touchpad</span>
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1>Events</h1>
+        </header>
+        <div class="info">
+            <span>Choose event listner for:</span>
+        </div>
+        <div class="container">
+            <div class="keyboard" id="kb">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        d="M22 7v10h-20v-10h20zm2-2h-24v14h24v-14zm-18 3h-3v2h3v-2zm3 0h-2v2h2v-2zm3 0h-2v2h2v-2zm3 0h-2v2h2v-2zm3 0h-2v2h2v-2zm3 0h-2v2h2v-2zm-4 6h-10v2h10v-2zm4-3h-4v2h4v-2zm-14 0h-4v2h4v-2zm3 0h-2v2h2v-2zm3 0h-2v2h2v-2zm3 0h-2v2h2v-2z"
+                    />
+                </svg>
+                <span>KEYBOARD</span>
+            </div>
+            <div class="mouse" id="mo">
+                <span>MOUSE</span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        d="M16 2c1.103 0 2 .897 2 2v12c0 3.309-2.691 6-6 6s-6-2.691-6-6v-12c0-1.103.897-2 2-2h8zm4 2c0-2.209-1.791-4-4-4h-8c-2.209 0-4 1.791-4 4v12c0 4.418 3.582 8 8 8s8-3.582 8-8v-12zm-7 1c0-.552-.447-1-1-1s-1 .448-1 1v4c0 .552.447 1 1 1s1-.448 1-1v-4z"
+                    />
+                </svg>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <footer>
+            <h6>Copyright 2021</h6>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
