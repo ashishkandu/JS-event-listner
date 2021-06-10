@@ -73,6 +73,7 @@ overlayClick.addEventListener("click", (e) => {
     modal.classList.remove("active");
     mouseEvent.classList.add("hidden");
     keyboardEvent.classList.add("hidden");
+    keyboard_display.innerText = "";
 });
 
 keyboard_display.addEventListener("click", (e) => {
